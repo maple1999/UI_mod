@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>869</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>661</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>111</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="openvideo">
+      <property name="text">
+       <string>打开视频文件</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="action_category">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string>动作类别</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>动作类别</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>front_raise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>pull_up</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>squat</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>bench_pressing</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>jump_jack</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>situp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>push_up</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>pommelhorse</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="camera">
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="toolTipDuration">
+       <number>-2</number>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>本地相机</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>外置相机</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="open_camera">
+      <property name="text">
+       <string>打开摄像头</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="close_camera">
+      <property name="text">
+       <string>关闭摄像头</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="start_conuting">
+      <property name="text">
+       <string>开始计数</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="stop_counting">
+      <property name="text">
+       <string>停止计数</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="video_detect">
+      <property name="text">
+       <string>视频检测</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>681</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(83, 82, 82)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(83, 82, 82)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>290</y>
+      <width>681</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>60</number>
+     </property>
+     <property name="rightMargin">
+      <number>60</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>120</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>开启摄像头</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>开始识别</string>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>793</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>设置曲线图位置</string>
+     </property>
+     <addaction name="action_7"/>
+     <addaction name="action_8"/>
+     <addaction name="action_9"/>
+     <addaction name="action_10"/>
+    </widget>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>动作识别类型</string>
+     </property>
+     <addaction name="actionfront_raise"/>
+     <addaction name="actionpull_up"/>
+     <addaction name="actionsquat"/>
+     <addaction name="actionbench_pressing"/>
+     <addaction name="actionjump_jack"/>
+     <addaction name="actionsitup"/>
+     <addaction name="actionpush_up"/>
+     <addaction name="actionpommelhorse"/>
+    </widget>
+    <addaction name="menu_3"/>
+    <addaction name="menu_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>调整</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>显示人体定位点</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>显示姿态曲线</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>显示识别动作类型</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>显示重复动作个数</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>设置字号大小</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>左上</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>左下</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>右上</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>右下</string>
+   </property>
+  </action>
+  <action name="actionfront_raise">
+   <property name="text">
+    <string>front_raise</string>
+   </property>
+  </action>
+  <action name="actionpull_up">
+   <property name="text">
+    <string>pull_up</string>
+   </property>
+  </action>
+  <action name="actionsquat">
+   <property name="text">
+    <string>squat</string>
+   </property>
+  </action>
+  <action name="actionbench_pressing">
+   <property name="text">
+    <string>bench_pressing</string>
+   </property>
+  </action>
+  <action name="actionjump_jack">
+   <property name="text">
+    <string>jump_jack</string>
+   </property>
+  </action>
+  <action name="actionsitup">
+   <property name="text">
+    <string>situp</string>
+   </property>
+  </action>
+  <action name="actionpush_up">
+   <property name="text">
+    <string>push_up</string>
+   </property>
+  </action>
+  <action name="actionpommelhorse">
+   <property name="text">
+    <string>pommelhorse</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
